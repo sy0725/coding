@@ -1,98 +1,21 @@
-# Algorithm
+# 👩🏻‍💻 CodingTest
 
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+> This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
 
-## Node.js fs모듈 사용법
+- 백준, 프로그래머스 사이트를 기준으로 공부하고 있습니다.
+- 하루에 최소 3문제 이상 푸는 것을 목표로 하고 있습니다. <br/>
 
-### 입력값(input)의 종류에 따른 fs 모듈 사용법
+## 🤔 HOW? 공통 진행방법
 
-#### 입력값이 하나일 때
+- 🌟 최대 **5분 이내 풀이법 생각하기** 가 목표입니다.
+- 👩🏻‍💻 제출 통과 후 **더 나은 문제 풀이법** 을 고민합니다.
+- 👩🏻‍💻 필요한 경우 **개별 파일에 코드리뷰 후 필수개념 정리 또는 오답노트 표를 기록** 합니다.
+- 📚 **[스터디](/studywithNote.md)** : 백준 페이지의 [단계별로 풀어보기](https://www.acmicpc.net/step) 를 활용하며 풀이를 공유합니다.
 
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim();
+## 🔗 바로가기
 
-/*
-예시>
-3
-*/
-```
-
-#### 입력값 사이에 공백에 끼여있을 때
-
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim().split(' ');
-
-/*
-예시>
-1 3 5
-
-input = ['1', '3', '5']
-*/
-```
-
-#### 여러 줄로 입력값이 나열되어 있을 때
-
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim().split('\n');
-
-/*
-예시>
-1
-2
-
-input = ['1', '2']
-*/
-```
-
-#### 첫 번째 줄에 자연수 n을 입력받고, 그 다음줄에 공백으로 구분된 n개의 값들을 입력받을 때
-
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim().split(/\s/);
-const [n,...arr] = input;
-
-/*
-예시>
-3
-1 2 3
-
-n = '3'
-arr = ['1', '2', '3']
-*/
-```
-
-#### parseInt로 입력값을 정수로 만들고 싶을 경우
-
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim().split(/\s/);
-const [n,...arr] = input;
-n = parseInt(n);
-arr = arr.map((item) => parseInt(item));
-
-/*
-예시>
-3
-1 2 3
-
-n = 3
-arr = [1, 2, 3]
-*/
-```
-
-#### 첫 번째 줄에 자연수 n을 입력받고, 그 다음줄부터 n개의 줄에 걸쳐 한 줄에 하나의 값을 입력받을 때
-
-```JS
-const input = require('fs').readFileSync(filePath).toString().trim().split('\n');
-const [n,...arr] = input;
-
-/*
-예시>
-2
-4
-1
-
-n = '2'
-arr = ['4', '1']
-*/
-```
-
-[참고](https://valueengine.tistory.com/2)
+- [백준 (JavaScript)](/백준/README.md)
+- [프로그래머스 (JavaScript)](/프로그래머스/README.md)
+- [코딩 테스트 스터디](/스터디/README.md)
+- 백준 [필수개념](/백준/studyNote-백준.md), [오답노트](/백준/reviewNote-백준.md)
+- 프로그래머스 [필수개념](/프로그래머스/studyNote-프로그래머스.md), [오답노트](/프로그래머스/reviewNote-프로그래머스.md)
